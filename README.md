@@ -42,7 +42,7 @@ docker-compose down
 ```
 Import example database:
 ```
-cp example.sql nginx-php56-mysql-1:/home/prawojazdy_lite.sql
+cp example.sql nginx-php56-mysql-1:/home/example.sql
 docker exec -it nginx-php56-mysql-1-mysql-1 /bin/bash
-mariadb -u user -p example-database < example.sql
+mariadb -u user -p example-database < /home/example.sql
 ```
